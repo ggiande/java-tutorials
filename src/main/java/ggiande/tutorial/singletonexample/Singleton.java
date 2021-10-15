@@ -1,6 +1,6 @@
 package ggiande.tutorial.singletonexample;
 
-/*
+/**
 * Singleton Example
 */
 public class Singleton {
@@ -9,9 +9,10 @@ public class Singleton {
     public String value;
     public static final int oneSecond = 1000;
 
-    /* Creates a Singleton Instance of itself
+    /** Creates a Singleton Instance of itself
     * @param instanceValue A generic string
     * @return Singleton
+    * @see Singleton
     */
     public static Singleton getInstance(String instanceValue) {
         if (instance == null) {
