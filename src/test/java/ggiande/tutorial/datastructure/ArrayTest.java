@@ -2,11 +2,18 @@ package ggiande.tutorial.datastructure;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.ArrayList;
+
+import static org.mockito.ArgumentMatchers.isA;
+import static org.mockito.Mockito.verify;
 
 class ArrayTest {
   int[] arrayOfIntegers;
+
+  @Mock
+  Array arrayClass;
   @BeforeEach
   void setUp() {
     // TODO: Init the Array that will always be used
@@ -15,7 +22,7 @@ class ArrayTest {
 
   @Test
   void printArrayElementsByIndex(int[] arrayOfIntegers) {
-
+//    verify(arrayClass.printArrayElementsByIndex(arrayOfIntegers), isA(ArrayList()));
   }
 
   @Test
@@ -24,5 +31,29 @@ class ArrayTest {
 
   @Test
   void removeElementFromArray() {
+  }
+
+  @Test
+  void testPrintArrayElementsByIndex() {
+  }
+
+  @Test
+  void testPrintArrayElements() {
+  }
+
+  @Test
+  void testRemoveElementFromArray() {
+  }
+
+  @Test
+  void accessValue() {
+  }
+
+  @Test
+  void updateValue() {
+  }
+
+  @Test
+  void getArrayLength() {
   }
 }
