@@ -13,7 +13,7 @@ public class Array {
 
     private static final Logger log = LogManager.getLogger(Array.class);
 
-    private static void printArrayElementsByIndex(int[] arrayOfIntegers) {
+    public void printArrayElementsByIndex(int[] arrayOfIntegers) {
         for (int i = 0; i < arrayOfIntegers.length; i++) {
             int currentValue = arrayOfIntegers[i];
             log.info("Array Index: {}", i + " Value: " + currentValue);
