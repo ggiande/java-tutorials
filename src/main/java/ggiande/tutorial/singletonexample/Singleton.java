@@ -5,7 +5,7 @@ package ggiande.tutorial.singletonexample;
 */
 public class Singleton {
 
-    private static Singleton instance;
+        private static Singleton instance;
     public String value;
     public static final int oneSecond = 1000;
 
